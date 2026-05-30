@@ -41,8 +41,8 @@ font-weight:bold;
 }
 
 .profile-card{
-width:420px;
-height:520px;
+width:480px;
+height:700px;
 overflow:hidden;
 border-radius:40px;
 background:rgba(255,255,255,.05);
@@ -163,7 +163,7 @@ outline:none;
     gap:24px;
     margin-top:50px;
 }
-
+/* 
 .skill-card{
 
     height:170px;
@@ -214,10 +214,345 @@ outline:none;
 
 .skill-card span{
     font-size:1.1rem;
-}
+} */
 
 #bg-canvas{
     position:fixed;
     inset:0;
     z-index:-1;
 }
+
+
+/* Progress Bar Styles
+.skill-progress-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-progress-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(6, 182, 212, 0.5);
+}
+
+.progress-bar-bg {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background: linear-gradient(90deg, #06b6d4, #22d3ee);
+    height: 100%;
+    border-radius: 1rem;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}*/
+
+/* Learning section different color 
+.learning .progress-bar-fill {
+    background: linear-gradient(90deg, #f59e0b, #fb923c);
+}*/
+
+/* Animation on scroll (optional - با جاوااسکریپت میشه انیمیشن درآورد)
+.skill-progress-card {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.skill-progress-card:nth-child(1) { animation-delay: 0.1s; }
+.skill-progress-card:nth-child(2) { animation-delay: 0.2s; }
+.skill-progress-card:nth-child(3) { animation-delay: 0.3s; }
+.skill-progress-card:nth-child(4) { animation-delay: 0.4s; }
+.skill-progress-card:nth-child(5) { animation-delay: 0.5s; }
+.skill-progress-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+
+
+/* ========== SKILLS SECTION STYLES ========== */
+
+.skill-card {
+    position: relative;
+    height: 170px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.skill-card:hover::before {
+    left: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px -12px rgba(0,0,0,0.3);
+}
+
+.skill-card.advanced:hover {
+    border-color: rgba(6, 182, 212, 0.8);
+    box-shadow: 0 20px 40px -12px rgba(6, 182, 212, 0.3), 0 0 0 1px rgba(6, 182, 212, 0.2);
+}
+
+.skill-card.learning:hover {
+    border-color: rgba(249, 115, 22, 0.8);
+    box-shadow: 0 20px 40px -12px rgba(249, 115, 22, 0.3), 0 0 0 1px rgba(249, 115, 22, 0.2);
+}
+
+.skill-card.advanced {
+    border-top: 2px solid rgba(6, 182, 212, 0.3);
+}
+
+.skill-card.learning {
+    border-top: 2px solid rgba(249, 115, 22, 0.3);
+}
+
+.icon-wrapper {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .icon-wrapper {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.skill-card i {
+    font-size: 3.2rem;
+    transition: all 0.3s ease;
+}
+
+.skill-card.advanced i {
+    filter: drop-shadow(0 0 5px rgba(6, 182, 212, 0.5));
+}
+
+.skill-card.learning i {
+    filter: drop-shadow(0 0 5px rgba(249, 115, 22, 0.4));
+}
+
+/* رنگ‌های اختصاصی برای هر آیکون */
+.skill-card:nth-child(1) i { color: #E34F26; }
+.skill-card:nth-child(2) i { color: #1572B6; }
+.skill-card:nth-child(3) i { color: #F7DF1E; }
+.skill-card:nth-child(4) i { color: #61DAFB; }
+.skill-card:nth-child(5) i { color: #38BDF8; }
+.skill-card:nth-child(6) i { color: #7952B3; }
+
+/* رنگ‌های ستون Learning */
+.skill-card.learning:nth-child(1) i { color: #0769AD; }
+.skill-card.learning:nth-child(2) i { color: #47A248; }
+.skill-card.learning:nth-child(3) i { color: #339933; }
+.skill-card.learning:nth-child(4) i { color: #512BD4; }
+.skill-card.learning:nth-child(5) i { color: #3776AB; }
+.skill-card.learning:nth-child(6) i { color: #42B883; }
+
+.skill-card span {
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, #fff, #a0a0a0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+}
+
+.dark .skill-card span {
+    background: linear-gradient(135deg, #fff, #cbd5e1);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.skill-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.skill-card.advanced .skill-glow {
+    background: linear-gradient(90deg, transparent, #06b6d4, #22d3ee, #06b6d4, transparent);
+}
+
+.skill-card.learning .skill-glow {
+    background: linear-gradient(90deg, transparent, #f97316, #fb923c, #f97316, transparent);
+}
+
+.skill-card:hover .skill-glow {
+    transform: scaleX(1);
+}
+
+/* انیمیشن ورود کارت‌ها */
+.skill-card {
+    opacity: 0;
+    animation: fadeInUpSkill 0.6s ease forwards;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0.05s; }
+.skill-card:nth-child(2) { animation-delay: 0.1s; }
+.skill-card:nth-child(3) { animation-delay: 0.15s; }
+.skill-card:nth-child(4) { animation-delay: 0.2s; }
+.skill-card:nth-child(5) { animation-delay: 0.25s; }
+.skill-card:nth-child(6) { animation-delay: 0.3s; }
+
+@keyframes fadeInUpSkill {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* استایل ستون‌ها */
+.skill-column {
+    animation: fadeInColumn 0.8s ease forwards;
+}
+
+.skill-column:first-child {
+    animation-delay: 0.1s;
+}
+
+@keyframes fadeInColumn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill-column:last-child {
+    animation-name: fadeInColumnRight;
+}
+
+@keyframes fadeInColumnRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* تنظیم گرید */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ریسپانسیو */
+@media (max-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-column {
+        margin-bottom: 2rem;
+    }
+    
+    .skill-card {
+        height: 140px;
+    }
+    
+    .skill-card i {
+        font-size: 2.5rem;
+    }
+    
+    .skill-card span {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 0.8rem;
+    }
+}
+
+
+/* استایل آیکون‌های سوشال */
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon div {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover div {
+    transform: translateY(-5px);
+}
+
+/* انیمیشن برای آیکون‌ها */
+/* @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+.social-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.social-icon:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-icon:nth-child(3) {
+    animation-delay: 0.4s;
+} */

@@ -1,402 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Amirmahdi Rastgoo | Portfolio</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script type="module" src="js/three-background.js"></script>
-<link rel="stylesheet" href="css/style.css">
-<script>
-    tailwind.config = {
-        darkMode: 'class'
-    }
-</script>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amirmahdi Rastgoo | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="js/three-background.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
-
 <body class="bg-white text-gray-900 dark:bg-[#050816] dark:text-white transition-colors duration-300">
-<div id="bg-canvas"></div>
+    <div id="bg-canvas"></div>
     <div id="cursor"></div>
 
-<!-- NAVBAR -->
-
-<nav class="
-bg-white/80
-
-dark:bg-black/20
-
-backdrop-blur-xl
-border-b
-
-border-gray-200
-dark:border-white/10
-">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="flex justify-between items-center h-20">
-
-<h1 class="text-2xl font-bold">
-Amirmahdi<span class="text-cyan-400">.Rst</span>
-</h1>
-
-<ul class="hidden md:flex gap-8">
-
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-    <!-- <button id="themeToggle" class="glass-button">
-        <i class="fas fa-moon"></i>
-    </button> -->
-    <button id="themeToggle"
-        class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">
-        <i id="themeIcon" class="fas fa-moon"></i>
-    </button>
-
-<button id="menuBtn" class="md:hidden">
-<i class="fas fa-bars"></i>
-</button>
-
-</div>
-
-</div>
-
-</nav>
-
-<!-- HERO -->
-
-<section id="home"
-class="min-h-screen flex items-center relative">
-
-<div class="gradient"></div>
-
-<div
-class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center">
-
-<div>
-
-<p class="text-cyan-400 mb-3">
-HELLO I'M
-</p>
-
-<h1 class="text-5xl md:text-7xl font-black leading-tight">
-Amirmahdi Rastgoo
-</h1>
-
-<h2
-class="text-2xl md:text-4xl mt-4 text-gray-300">
-
-Creative Frontend Developer
-</h2>
-
-<p
-class="text-gray-400 mt-6 max-w-xl leading-relaxed">
-
-a frontend developer focused on delivering fast, responsive, and scalable web applications using modern frameworks and best practices.
-</p>
-
-<div class="flex flex-wrap gap-4 mt-8">
-
-    <a href="#projects"
-       class="btn-primary">
-       View Projects
-    </a>
-
-    <a href="#contact"
-       class="btn-secondary">
-       Contact Me
-    </a>
-
-    <a href="assets/resume.pdf"
-       download
-       class="btn-resume">
-
-        <i class="fas fa-download"></i>
-        Resume
-
-    </a>
-
-</div>
-
-</div>
-
-<div class="flex justify-center">
-
-<div class="profile-card">
-
-<img
-src="https://images.unsplash.com/photo-1500648767791-00dcc994a43"
-alt="profile">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about"
-class="py-32">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="section-title">
-About Me
-</h2>
-
-<div class="grid md:grid-cols-2 gap-12 mt-12">
-
-<div>
-
-<p class="text-gray-400 leading-8">
-
-I started my journey as a front-end intern and focused on building clean, responsive, and user-friendly interfaces.
-
-I specialize in creating responsive,
-modern and user-focused web
-applications.
-
-Passionate about clean design,
-performance optimization and creating
-memorable user experiences.
-
-</p>
-
-</div>
-
-<div class="grid grid-cols-2 gap-5">
-
-<div class="glass-card">
-<h3>4+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="glass-card">
-<h3>50+</h3>
-<p>Projects</p>
-</div>
-
-<div class="glass-card">
-<h3>20+</h3>
-<p>Clients</p>
-</div>
-
-<div class="glass-card">
-<h3>100%</h3>
-<p>Satisfaction</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SKILLS -->
-
-<!-- <section class="py-24">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="section-title">
-Tech Stack
-</h2>
-
-<div
-class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-12">
-
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">Tailwind</div>
-<div class="skill">React</div>
-<div class="skill">Node.js</div>
-
-</div>
-
-</div>
-
+    <!-- NAVBAR -->
+    <nav class="bg-white/80 dark:bg-black/20 backdrop-blur-xl border-b border-gray-200 dark:border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <h1 class="text-2xl font-bold">
+                    Amirmahdi<span class="text-cyan-400">.Rst</span>
+                </h1>
+                <ul class="hidden md:flex gap-8">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">
+                    <i id="themeIcon" class="fas fa-moon"></i>
+                </button>
+                <button id="menuBtn" class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center relative">
+        <div class="gradient"></div>
+        <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <p class="text-cyan-400 mb-3">HELLO I'M</p>
+                <h1 class="text-5xl md:text-7xl font-black leading-tight">Amirmahdi Rastgoo</h1>
+                <h2 class="text-2xl md:text-4xl mt-4 text-gray-300">Creative Frontend Developer</h2>
+                <p class="text-gray-400 mt-6 max-w-xl leading-relaxed">a frontend developer focused on delivering fast, responsive, and scalable web applications using modern frameworks and best practices.</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                    <a href="assets/Amirmahdi-Rst(en).pdf" download class="btn-resume">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+                <!-- آیکون‌های سوشال زیر دکمه‌ها -->
+                <!--<div class="flex gap-5 mt-8 pt-4 border-t border-gray-700/30">
+                     GitHub 
+                    <a href="https://github.com/amirmahdirst" target="_blank" 
+                    class="social-icon group">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 dark:from-gray-800 dark:to-black flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-cyan-500/30 border border-gray-600/30">
+                            <i class="fab fa-github text-xl text-white group-hover:text-cyan-400 transition-colors duration-300"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 mt-1 block group-hover:text-cyan-400 transition-colors">GitHub</span>
+                    </a>
+                    
+                     Telegram 
+                    <a href="https://t.me/amirmahdirst" target="_blank" 
+                    class="social-icon group">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-sky-600 to-blue-700 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-sky-500/30">
+                            <i class="fab fa-telegram-plane text-xl text-white"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 mt-1 block group-hover:text-sky-400 transition-colors">Telegram</span>
+                    </a>
+                    
+                     Email
+                    <a href="mailto:amirmahdi.rst@gmail.com" 
+                    class="social-icon group">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-red-600 to-pink-600 flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-red-500/30">
+                            <i class="fas fa-envelope text-xl text-white"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 mt-1 block group-hover:text-red-400 transition-colors">Email</span>
+                    </a>
+                </div>-->
+                <div class="flex gap-6 mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <!-- GitHub -->
+                    <a href="https://github.com/amirmahdirst" target="_blank" 
+                    class="group flex flex-col items-center gap-2 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-11 h-11 rounded-full bg-gray-800 dark:bg-gray-700 flex items-center justify-center shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300">
+                            <i class="fab fa-github text-white text-xl group-hover:text-cyan-400 transition-colors"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-cyan-400">GitHub</span>
+                    </a>
+                    
+                    <!-- Telegram -->
+                    <a href="https://t.me/amirmahdirst" target="_blank" 
+                    class="group flex flex-col items-center gap-2 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:shadow-sky-500/50 transition-all duration-300">
+                            <i class="fab fa-telegram-plane text-white text-xl"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-sky-400">Telegram</span>
+                    </a>
+                    
+                    <!-- Email -->
+                    <a href="mailto:amirmahdi.rst@gmail.com" 
+                    class="group flex flex-col items-center gap-2 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-11 h-11 rounded-full bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center shadow-lg group-hover:shadow-red-500/50 transition-all duration-300">
+                            <i class="fas fa-envelope text-white text-xl"></i>
+                        </div>
+                        <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-red-400">Email</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="profile-card">
+                    <img src="./assets/Amirmahdi-Rst(en).jpg" alt="profile">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <!-- <section id="about" class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <div>
+                    <p class="text-gray-400 leading-8">
+                        I started my journey as a front-end intern and focused on building clean, responsive, and user-friendly interfaces.
+                        I specialize in creating responsive, modern and user-focused web applications.
+                        Passionate about clean design, performance optimization and creating memorable user experiences.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-5">
+                    <div class="glass-card">
+                        <h3>4+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>50+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>20+</h3>
+                        <p>Clients</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>100%</h3>
+                        <p>Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SKILLS -->
+<!-- <section class="py-32">    
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <span>HTML5</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span>CSS3</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <span>React</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-tailwind"></i>
+                <span>Tailwind</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span>Bootstrap</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-jquery"></i>
+                <span>jQuery</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-database"></i>
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands fa-microsoft"></i>
+                <span>ASP.NET</span>
+            </div>
+        </div>
+    </div>
 </section> -->
+<!-- SKILLS -->
+<!-- SKILLS - Advanced & Learning Side by Side -->
+<section class="py-32 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- تیتر اصلی -->
+        <div class="text-center mb-16">
+            <h2 class="section-title text-center inline-block relative">
+                Tech Stack
+                <span class="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></span>
+            </h2>
+        </div>
+
+        <!-- دو ستون کنار هم -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+            
+            <!-- ستون راست: Advanced Skills -->
+            <div class="skill-column">
+                <div class="flex items-center gap-3 mb-8 pb-2 border-b-2 border-cyan-500/30">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-star text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                        Advanced Skills
+                    </h3>
+                    <span class="text-xs px-2 py-1 rounded-full bg-cyan-500/20 text-cyan-400">Mastered</span>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <span>HTML5</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <span>CSS3</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <span>JavaScript</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                        <span>React</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-bootstrap"></i>
+                        </div>
+                        <span>Bootstrap</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill advanced">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-tailwind"></i>
+                        </div>
+                        <span>Tailwind</span>
+                        <div class="skill-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-jquery"></i>
+                        </div>
+                        <span>jQuery</span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ستون چپ: Learning & Exploring -->
+            <div class="skill-column">
+                <div class="flex items-center gap-3 mb-8 pb-2 border-b-2 border-orange-500/30">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-sm"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
+                        Learning & Exploring
+                    </h3>
+                    <span class="text-xs px-2 py-1 rounded-full bg-orange-500/20 text-orange-400">In Progress</span>
+                </div>
+                <div class="skills-grid">
+                    
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-microsoft"></i>
+                        </div>
+                        <span>ASP.NET</span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span>MongoDB</span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-vuejs"></i>
+                        </div>
+                        <span>Vue.js</span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+                    <!-- C# -->
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <span> C# </span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+
+                    <!-- Figma -->
+                    <div class="skill-card modern-skill learning">
+                        <div class="icon-wrapper">
+                            <i class="fa-brands fa-figma"></i>
+                        </div>
+                        <span>Figma</span>
+                        <div class="skill-glow learning-glow"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- SKILLS - Advanced
 <section class="py-32">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="section-title text-center">⚡ Advanced Skills</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-html5 text-2xl text-orange-500"></i>
+                        <span class="font-semibold">HTML5</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">95%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-css3-alt text-2xl text-blue-500"></i>
+                        <span class="font-semibold">CSS3</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-js text-2xl text-yellow-500"></i>
+                        <span class="font-semibold">JavaScript</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-react text-2xl text-cyan-400"></i>
+                        <span class="font-semibold">React</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">80%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-tailwind text-2xl text-sky-500"></i>
+                        <span class="font-semibold">Tailwind CSS</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">90%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-bootstrap text-2xl text-purple-500"></i>
+                        <span class="font-semibold">Bootstrap</span>
+                    </div>
+                    <span class="text-cyan-400 font-bold">85%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
 
-<div class="max-w-7xl mx-auto px-6">
+<!-- SKILLS - Learning
+<section class="py-32">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="section-title text-center">📚 Learning & Exploring</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="skill-progress-card learning">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-jquery text-2xl text-blue-400"></i>
+                        <span class="font-semibold">jQuery</span>
+                    </div>
+                    <span class="text-orange-400 font-bold">60%</span>
+                </div>
+                <div class="progress-bar-bg learning-bg">
+                    <div class="progress-bar-fill learning-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card learning">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-database text-2xl text-green-600"></i>
+                        <span class="font-semibold">MongoDB</span>
+                    </div>
+                    <span class="text-orange-400 font-bold">50%</span>
+                </div>
+                <div class="progress-bar-bg learning-bg">
+                    <div class="progress-bar-fill learning-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-progress-card learning">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-microsoft text-2xl text-purple-400"></i>
+                        <span class="font-semibold">ASP.NET</span>
+                    </div>
+                    <span class="text-orange-400 font-bold">40%</span>
+                </div>
+                <div class="progress-bar-bg learning-bg">
+                    <div class="progress-bar-fill learning-fill" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
 
-<h2 class="section-title">
+    <!-- PROJECTS -->
+    <!-- <section id="projects" class="py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+                    <div class="p-6">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern online store with dashboard.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+                    <div class="p-6">
+                        <h3>SaaS Landing Page</h3>
+                        <p>Professional startup website.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
+                    <div class="p-6">
+                        <h3>AI Dashboard</h3>
+                        <p>Analytics dashboard with charts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-Tech Stack
-
-</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<i class="fa-brands fa-html5"></i>
-<span>HTML5</span>
-</div>
-
-<div class="skill-card">
-<i class="fa-brands fa-css3-alt"></i>
-<span>CSS3</span>
-</div>
-
-<div class="skill-card">
-<i class="fa-brands fa-js"></i>
-<span>JavaScript</span>
-</div>
-
-<div class="skill-card">
-<i class="fa-brands fa-react"></i>
-<span>React</span>
-</div>
-
-<div class="skill-card">
-<i class="fa-solid fa-database"></i>
-<span>MongoDB</span>
-</div>
-
-<div class="skill-card">
-<i class="fa-brands fa-node-js"></i>
-<span>NodeJS</span>
-</div>
-
-</div>
-
-</div>
-
+    <!-- CONTACT -->
+    <!-- <section id="contact" class="py-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="section-title text-center">Let's Work Together</h2>
+            <form class="glass-card mt-10 p-8 space-y-5">
+                <input type="text" placeholder="Your Name" class="input">
+                <input type="email" placeholder="Your Email" class="input">
+                <textarea rows="5" placeholder="Message" class="input"></textarea>
+                <button class="w-full bg-cyan-500 py-4 rounded-xl">Send Message</button>
+            </form>
+        </div>
+    </section> -->
+    <section id="contact" class="py-32">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="section-title text-center">Let's Work Together</h2>
+        
+        <!-- پیغام موفقیت یا خطا -->
+        <div id="formStatus" class="hidden mt-4 p-4 rounded-xl text-center transition-all duration-300"></div>
+        
+        <form id="contactForm" class="glass-card mt-10 p-8 space-y-5">
+            <input type="text" id="userName" placeholder="Your Name" class="input" required>
+            <input type="email" id="userEmail" placeholder="Your Email" class="input" required>
+            <textarea id="userMessage" rows="5" placeholder="Message" class="input" required></textarea>
+            <button type="submit" id="submitBtn" class="w-full bg-cyan-500 hover:bg-cyan-600 transition-all duration-300 py-4 rounded-xl font-semibold flex items-center justify-center gap-2">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+            </button>
+        </form>
+    </div>
 </section>
 
-<!-- PROJECTS -->
-
-<section
-id="projects"
-class="py-32">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="section-title">
-Featured Projects
-</h2>
-
-<div
-class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-
-<div class="project-card">
-
-<img
-src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
-
-<div class="p-6">
-
-<h3>E-Commerce Platform</h3>
-
-<p>
-Modern online store with dashboard.
-</p>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img
-src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-
-<div class="p-6">
-
-<h3>SaaS Landing Page</h3>
-
-<p>
-Professional startup website.
-</p>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img
-src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
-
-<div class="p-6">
-
-<h3>AI Dashboard</h3>
-
-<p>
-Analytics dashboard with charts.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section
-id="contact"
-class="py-32">
-
-<div class="max-w-4xl mx-auto px-6">
-
-<h2 class="section-title text-center">
-Let's Work Together
-</h2>
-
-<form
-class="glass-card mt-10 p-8 space-y-5">
-
-<input
-type="text"
-placeholder="Your Name"
-class="input">
-
-<input
-type="email"
-placeholder="Your Email"
-class="input">
-
-<textarea
-rows="5"
-placeholder="Message"
-class="input"></textarea>
-
-<button
-class="w-full bg-cyan-500 py-4 rounded-xl">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<script src="js/app.js"></script>
-
+    <script src="js/app.js"></script>
 </body>
 </html>
