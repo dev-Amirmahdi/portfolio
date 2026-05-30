@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Amirmahdi Rastgoo | Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script type="module" src="js/three-background.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script>
+    tailwind.config = {
+        darkMode: 'class'
+    }
+</script>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-[#050816] dark:text-white transition-colors duration-300">
+<div id="bg-canvas"></div>
+    <div id="cursor"></div>
+
+<!-- NAVBAR -->
+
+<nav class="
+bg-white/80
+
+dark:bg-black/20
+
+backdrop-blur-xl
+border-b
+
+border-gray-200
+dark:border-white/10
+">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="flex justify-between items-center h-20">
+
+<h1 class="text-2xl font-bold">
+Amirmahdi<span class="text-cyan-400">.Rst</span>
+</h1>
+
+<ul class="hidden md:flex gap-8">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+    <!-- <button id="themeToggle" class="glass-button">
+        <i class="fas fa-moon"></i>
+    </button> -->
+    <button id="themeToggle"
+        class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">
+        <i id="themeIcon" class="fas fa-moon"></i>
+    </button>
+
+<button id="menuBtn" class="md:hidden">
+<i class="fas fa-bars"></i>
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home"
+class="min-h-screen flex items-center relative">
+
+<div class="gradient"></div>
+
+<div
+class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-12 items-center">
+
+<div>
+
+<p class="text-cyan-400 mb-3">
+HELLO I'M
+</p>
+
+<h1 class="text-5xl md:text-7xl font-black leading-tight">
+Amirmahdi Rastgoo
+</h1>
+
+<h2
+class="text-2xl md:text-4xl mt-4 text-gray-300">
+
+Creative Frontend Developer
+</h2>
+
+<p
+class="text-gray-400 mt-6 max-w-xl leading-relaxed">
+
+a frontend developer focused on delivering fast, responsive, and scalable web applications using modern frameworks and best practices.
+</p>
+
+<div class="flex flex-wrap gap-4 mt-8">
+
+    <a href="#projects"
+       class="btn-primary">
+       View Projects
+    </a>
+
+    <a href="#contact"
+       class="btn-secondary">
+       Contact Me
+    </a>
+
+    <a href="assets/resume.pdf"
+       download
+       class="btn-resume">
+
+        <i class="fas fa-download"></i>
+        Resume
+
+    </a>
+
+</div>
+
+</div>
+
+<div class="flex justify-center">
+
+<div class="profile-card">
+
+<img
+src="https://images.unsplash.com/photo-1500648767791-00dcc994a43"
+alt="profile">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about"
+class="py-32">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="grid md:grid-cols-2 gap-12 mt-12">
+
+<div>
+
+<p class="text-gray-400 leading-8">
+
+I started my journey as a front-end intern and focused on building clean, responsive, and user-friendly interfaces.
+
+I specialize in creating responsive,
+modern and user-focused web
+applications.
+
+Passionate about clean design,
+performance optimization and creating
+memorable user experiences.
+
+</p>
+
+</div>
+
+<div class="grid grid-cols-2 gap-5">
+
+<div class="glass-card">
+<h3>4+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="glass-card">
+<h3>50+</h3>
+<p>Projects</p>
+</div>
+
+<div class="glass-card">
+<h3>20+</h3>
+<p>Clients</p>
+</div>
+
+<div class="glass-card">
+<h3>100%</h3>
+<p>Satisfaction</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<!-- <section class="py-24">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="section-title">
+Tech Stack
+</h2>
+
+<div
+class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-12">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Tailwind</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+
+</div>
+
+</div>
+
+</section> -->
+<section class="py-32">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="section-title">
+
+Tech Stack
+
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<i class="fa-brands fa-html5"></i>
+<span>HTML5</span>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-css3-alt"></i>
+<span>CSS3</span>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-js"></i>
+<span>JavaScript</span>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-react"></i>
+<span>React</span>
+</div>
+
+<div class="skill-card">
+<i class="fa-solid fa-database"></i>
+<span>MongoDB</span>
+</div>
+
+<div class="skill-card">
+<i class="fa-brands fa-node-js"></i>
+<span>NodeJS</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section
+id="projects"
+class="py-32">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="section-title">
+Featured Projects
+</h2>
+
+<div
+class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+<div class="project-card">
+
+<img
+src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+
+<div class="p-6">
+
+<h3>E-Commerce Platform</h3>
+
+<p>
+Modern online store with dashboard.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img
+src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<div class="p-6">
+
+<h3>SaaS Landing Page</h3>
+
+<p>
+Professional startup website.
+</p>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<img
+src="https://images.unsplash.com/photo-1551650975-87deedd944c3">
+
+<div class="p-6">
+
+<h3>AI Dashboard</h3>
+
+<p>
+Analytics dashboard with charts.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section
+id="contact"
+class="py-32">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="section-title text-center">
+Let's Work Together
+</h2>
+
+<form
+class="glass-card mt-10 p-8 space-y-5">
+
+<input
+type="text"
+placeholder="Your Name"
+class="input">
+
+<input
+type="email"
+placeholder="Your Email"
+class="input">
+
+<textarea
+rows="5"
+placeholder="Message"
+class="input"></textarea>
+
+<button
+class="w-full bg-cyan-500 py-4 rounded-xl">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
