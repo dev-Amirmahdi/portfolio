@@ -216,10 +216,21 @@ outline:none;
     font-size:1.1rem;
 } */
 
-#bg-canvas{
+/* #bg-canvas{
     position:fixed;
     inset:0;
     z-index:-1;
+} */
+
+#bg-canvas{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg-canvas canvas{
+    display: block;
 }
 
 
@@ -535,6 +546,19 @@ outline:none;
     transform: translateY(-5px);
 }
 
+.tailwind-svg{
+     filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.jquery-svg{
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+.span-icon{
+    margin-bottom: 35px;
+}
+
 /* انیمیشن برای آیکون‌ها */
 /* @keyframes float {
     0%, 100% {
@@ -556,3 +580,5 @@ outline:none;
 .social-icon:nth-child(3) {
     animation-delay: 0.4s;
 } */
+
+
